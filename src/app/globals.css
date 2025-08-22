@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  @apply bg-base-950 text-white;
+}
+
+/* Scrollbar subtle styling */
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: #1f2833; border-radius: 9999px; border: 2px solid transparent; background-clip: padding-box; }
+*::-webkit-scrollbar-thumb:hover { background: #2e3a47; }
+
+/* Focus ring */
+.focus-ring:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(34,211,238,0.35); border-radius: 0.5rem; }
+
+/* Backdrop blur fix for Safari */
+.backdrop-blur-supported { -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
